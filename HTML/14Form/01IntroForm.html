@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tag In HTML</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Form In HTML</legend>
+      <form action="" method="post" enctype="multipart/form-data">
+      <!-- <form action=""> -->
+        <label for="uname">User Name</label>
+        <input type="text" name="uname" id="uname">
+        <br><br>
+        <label for="upass">User Password</label>
+        <input type="password" name="upass" id="upass">
+        <br><br>
+        <button>Submit</button>
+      </form>
+    </fieldset>
+
+    <hr />
+    <!-- action="" => Here we write the path , whereever we want to send the user's data (i.e Backend File) -->
+    <!-- method="" => We have two types of method  -->
+    <!-- 1. get => By default -->
+    <!-- => Limitation of data sending 255 character-->
+    <!-- => It shows data in url  -->
+    <!-- => Easily bookmarked -->
+    <!-- 2. Post => Secure method -->
+    <!-- => no Limitation -->
+    <!-- => not bookmarked -->
+    <!-- enctype="multipart/form-data" => Used when method is post -->
+    <!-- => support multimedia files  -->
+  </body>
+</html>
