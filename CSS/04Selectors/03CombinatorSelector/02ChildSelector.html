@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        .parent{
+            border: 5px solid black;
+        }
+        .child{
+            border: 5px dashed rgb(255, 0, 115);
+        }
+        /* it will applyon direct child  */
+        .parent>p{
+            color: khaki;
+            background-color: blueviolet;
+        }
+        .child>p{
+            background-color: crimson;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Child Selector (>)</h1>
+    <div class="parent">
+        This is Parent Element
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, similique.</p>
+        <div class="child">
+            In This We have Grand Children
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, similique.</p>
+    </div>
+</body>
+</html>
