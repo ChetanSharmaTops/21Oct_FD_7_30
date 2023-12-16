@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Property In CSS</title>
+    <style>
+      div[class*="background"] {
+        border: 10px dashed brown;
+        margin: 10px ;
+        height: 500px;
+        color: rgb(129, 0, 250);
+        font-size: 50px;
+      }
+      .background-attachment {
+        background-image: url(../../Images/Taj.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .background-clip {
+        background-image: url(../../Images/Taj.jpg);
+        background-repeat: no-repeat;
+        padding: 100px;
+        background-clip: padding-box;
+        background-clip: content-box;
+        background-clip: border-box;
+      }
+      .background-color {
+        background-color: burlywood;
+      }
+      .background-image {
+        background-image: url(../../Images/Taj.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      .background-origin {
+        border: 20px dashed brown !important;
+
+        background-image: url(../../Images/Taj.jpg);
+        padding: 100px;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-origin: padding-box;
+        background-origin: content-box;
+      }
+      .background-position {
+        background-image: url(../../Images/Taj.jpg);
+        background-size: 200px;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-position: center;
+        background-position: top;
+        background-position: left;
+        background-position: right;
+        background-position: bottom;
+        background-position: 50px 100px;
+      }
+      .background-repeat {
+        background-image: url(../../Images/Taj.jpg);
+        background-size: 200px;
+        background-repeat: repeat-y;
+        background-repeat: repeat-x;
+        background-repeat: round;
+        background-repeat: space;
+        background-repeat: no-repeat;
+      }
+      .background-size {
+        background-image: url(../../Images/Taj.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+        background-size: 200px;
+      }
+      .background-multiple {
+        background-image: url(../../Images/perrot.webp), url(../../Images/Taj.jpg);
+        background-repeat: no-repeat;
+        background-size: 150px ,cover;
+        background-position: top 10px right 10px, center;
+      }
+      .background-multiple2 {
+        background-image: url(../../Images/perrot.webp), url(../../Images/Taj.jpg);
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+        background-size: 50%;
+        background-position: left, right;
+      }
+      .background-shorthand {
+        background: url(../../Images/Taj.jpg)no-repeat center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background Property In CSS</h1>
+    <hr />
+    <ol>
+      <li>background-attachment</li>
+      <li>background-clip</li>
+      <li>background-color</li>
+      <li>background-image</li>
+      <li>background-origin</li>
+      <li>background-position</li>
+      <li>background-repeat</li>
+      <li>background-size</li>
+    </ol>
+    <hr />
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-multiple">background-multiple</div>
+    <div class="background-multiple2">background-multiple2</div>
+    <div class="background-shorthand">background-shorthand</div>
+  </body>
+</html>
