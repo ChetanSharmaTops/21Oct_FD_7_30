@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: tan;
+            color: aliceblue;
+            /* font-size: 20px; */
+        }
+        .margin{
+            width: 500px;
+            height: 500px;
+            border: 2px dashed blue;
+            margin: auto;
+            background-color: blueviolet;
+        }
+        .border{
+            width: 450px;
+            height: 450px;
+            border: 2px dashed brown;
+            margin: 25px auto ;
+            background-color: rgb(95, 217, 222);
+
+        }
+        .padding{
+            width: 400px;
+            height: 400px;
+            border: 2px dashed rgb(230, 0, 238);
+            margin: 25px auto ;
+            background-color: rgb(6, 236, 124);
+
+        }
+        .content{
+            width: 350px;
+            height: 350px;
+            border: 2px dashed rgb(79, 238, 0);
+            margin: 25px auto ;
+            background-color: rgb(98, 143, 206);
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="margin">
+        <div class="border">
+            <div class="padding">
+                <div class="content">
+                    Namaste Bharat
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
