@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .col-33 {
+        width: 33.33%;
+      }
+      .col-50 {
+        width: 50%;
+      }
+      .col-25 {
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-33">Col-33</div>
+        <div class="col-33">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ullam,
+          maxime, voluptatibus explicabo a ea sapiente minus modi temporibus
+          dicta, quidem adipisci perferendis nesciunt sunt hic perspiciatis
+          laudantium tenetur quos!
+        </div>
+        <div class="col-33">Col-33</div>
+      </div>
+      <div class="row">
+        <div class="col-50">Col-50</div>
+        <div class="col-50">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ullam,
+          maxime, voluptatibus explicabo a ea sapiente minus modi temporibus
+          dicta, quidem adipisci perferendis nesciunt sunt hic perspiciatis
+          laudantium tenetur quos!
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">Col-25</div>
+        <div class="col-25">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ullam,
+          maxime, voluptatibus explicabo a ea sapiente minus modi temporibus
+          dicta, quidem adipisci perferendis nesciunt sunt hic perspiciatis
+          laudantium tenetur quos!
+        </div>
+        <div class="col-25">Col-25</div>
+        <div class="col-25">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ullam,
+          maxime, voluptatibus explicabo a ea sapiente minus modi temporibus
+          dicta, quidem adipisci perferendis nesciunt sunt hic perspiciatis
+          laudantium tenetur quos!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
