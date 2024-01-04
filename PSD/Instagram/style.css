@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+#box {
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 20px 0px;
+  filter: drop-shadow(30.5px 52.828px 36.5px rgba(10, 10, 10, 0.3));
+  background-color: #ffffff;
+  border: 2px solid blueviolet;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-icon {
+  width: 50px;
+}
+.profile {
+  border-radius: 50%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.uname-wrap {
+  font-family: "Founders Grotesk";
+  margin-left: 20px;
+}
+h2 {
+  font-size: 30px;
+  color: #49494b;
+  font-weight: 500;
+}
+h2 + p {
+  font-size: 20px;
+  color: #49494b;
+}
+.dots > i {
+  font-size: 30px;
+}
+.post-Image {
+  margin: 10px 0px;
+  height: 400px;
+}
+.heart {
+  color: #ff0000;
+}
+.social-icon i {
+  font-size: 30px;
+}
+.hey {
+  margin-right: 10px;
+}
+.dotsh > i {
+  font-size: 40px;
+  margin-right: 50px;
+}
+span {
+  color: blue;
+}
+body {
+  background-image: linear-gradient(
+    -45deg,
+    #feda75 0%,
+    #fb7f1f 21%,
+    #d62a76 50%,
+    #9630c0 74%,
+    #4f5bd5 100%
+  );
+}
