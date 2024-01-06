@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Position Absolute relative</title>
-</head>
-<body>
-    
-</body>
+    <!-- CSS is here  -->
+
+    <style>
+      :root {
+        --brown: #28f0be;
+        --bgColor: #b10dfd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+      }
+      body{
+        background-color: var(--bgColor);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 5px solid var(--brown);
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+      .col-50 {
+        width: 50%;
+      }
+      img {
+        width: 100%;
+      }
+      .posi-rel {
+        position: relative;
+      }
+      .offer {
+        width: 200px;
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+      }
+      .posi-ab1 {
+        position: absolute;
+        width: 200px;
+        top: 0px;
+        right: 200px;
+      }
+      .posi-ab2 {
+        position: absolute;
+        width: 200px;
+        bottom: 2px;
+        right: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-50">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id natus unde
+          reprehenderit laudantium, vel illo placeat. Voluptatibus cumque, sequi
+          eveniet similique id dolor vel facere quae porro repellat nostrum
+          nesciunt.
+        </div>
+        <div class="col-50 posi-rel">
+          <img src="../../Images/arjit.jfif" alt="" />
+          <img src="../../Images/offer.webp" class="offer" alt="" />
+        </div>
+      </div>
+      <div class="row posi-rel">
+        <div class="col-50 posi-rel">
+          <img src="../../Images/arjit.jfif" alt="" />
+          <img src="../../Images/offer.webp" class="offer" alt="" />
+        </div>
+
+        <div class="col-50">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id natus
+            unde reprehenderit laudantium, vel illo placeat. Voluptatibus
+            cumque, sequi eveniet similique id dolor vel facere quae porro
+            repellat nostrum nesciunt.
+          </p>
+          <img src="../../Images/img.png" class="posi-ab1" alt="" />
+          <img src="../../Images/car.jpg" class="posi-ab2" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
