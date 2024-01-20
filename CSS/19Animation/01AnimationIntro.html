@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Intro</title>
+
+    <!-- css  -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 3px solid lime;
+        animation-name: jadu;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        /* animation-iteration-count: 2; */
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-play-state: running;
+      }
+      .box:hover{
+        animation-play-state: paused;
+      }
+
+      @keyframes jadu {
+        from {
+          margin-left: 0px;
+          margin-top: 0px;
+          background-color: brown;
+          color: khaki;
+        }
+        to {
+          margin-top: 360px;
+          margin-left: 1150px;
+          background-color: blueviolet;
+          color: aliceblue;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation</h1>
+    <div class="box">Let's see the magic of Animation In CSS</div>
+  </body>
+</html>

@@ -77,6 +77,15 @@
         background-color: khaki;
         color: brown;
       }
+      .header-wrapper{
+        position: relative;
+      }
+      .posi-ab{
+        position: absolute;
+        width: 100px;
+        bottom: 300px;
+        right: 325px;
+      }
 
       @media (max-width: 576px) {
         body {
@@ -100,49 +109,60 @@
         .col-25 {
           width: 100%;
         }
+        .posi-ab{
+          width: 80px;
+        bottom: 180px;
+        left: 20px;
+      }
       }
     </style>
   </head>
   <body>
     <header id="header">
-      <div class="container">
-        <div class="main-text">
-          <h1>Heading</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Aspernatur, provident!
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-50">
-            <div class="box">
-              <div class="image"></div>
-              <h3>Card</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
+      <div class="header-wrapper">
+        <img src="../../Images/favicon.png" class="posi-ab" alt="">
+        <div class="container">
+          <div class="main-text">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur, provident!
+            </p>
           </div>
-          <div class="col-50">
-            <div class="text">
-              <h2>Sub-Heading</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-                quas soluta necessitatibus autem? Natus atque nemo blanditiis
-                aspernatur aliquam itaque at? Excepturi quod perspiciatis eum
-                qui. Odit veritatis fuga natus.
-              </p>
+          <div class="row">
+            <div class="col-50">
+              <div class="box">
+                <div class="image"></div>
+                <h3>Card</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="col-50">
+              <div class="text">
+                <h2>Sub-Heading</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsam quas soluta necessitatibus autem? Natus atque nemo
+                  blanditiis aspernatur aliquam itaque at? Excepturi quod
+                  perspiciatis eum qui. Odit veritatis fuga natus.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Section starts from here  -->
     <section id="section-1">
       <div class="container">
         <div class="text">
-            <h2>Sub-Heading</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, officiis.
-            </p>
-          </div>
+          <h2>Sub-Heading</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repellendus, officiis.
+          </p>
+        </div>
         <div class="row">
           <div class="col-25">
             <div class="box">
