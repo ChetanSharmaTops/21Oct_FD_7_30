@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Rotate</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 3px solid lime;
+        background: url(../../Images/car.jpg) no-repeat center/cover;
+        animation-name: rotatingCar;
+        animation-duration: 10s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+
+      }
+
+      @keyframes rotatingCar {
+        from{
+            /* margin-left: 0px; */
+            transform: rotate(0deg) translateX(0px);
+        }
+        to{
+            /* margin-left: 1000px; */
+            transform: rotate(360deg) translateX(0px);
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
