@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+
+    <!-- CSS  -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #nav {
+        background-color: crimson;
+        position: relative;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        width: 80px;
+        border: 5px solid lime;
+      }
+      img {
+        width: 100%;
+      }
+      li {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: aliceblue;
+        padding: 0px 30px;
+        font-size: 30px;
+
+      }
+      input {
+        display: none;
+      }
+
+      @media (max-width: 576px) {
+        .nav-items {
+          display: none;
+        }
+        input {
+          display: block;
+          width: 30px;
+          height: 30px;
+        }
+        input:checked + .nav-items {
+          display: block;
+          width: 200px;
+          padding: 10px 0px;
+          font-size: 30px;
+          position: absolute;
+          border: 3px solid blueviolet;
+          background-color: teal;
+          color: khaki;
+          top: 110px;
+          right: 0;
+          animation-name: slide;
+          animation-duration: 2s;
+        }
+
+        @keyframes slide {
+            from{
+                right: -200px;
+            }
+            to{
+                right: 0px;
+            }
+            
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav" class="row">
+      <div class="logo">
+        <img src="../Images/perrot.webp" alt="" />
+      </div>
+      <input type="checkbox" />
+      <ul class="nav-items row">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
