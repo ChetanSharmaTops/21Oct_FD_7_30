@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+
+    <input type="text" id="first" />
+    <input type="text" id="second" />
+    <button onclick="addTwoNumber()">ADD</button>
+    <div id="result"></div>
+
+    <script>
+      function addTwoNumber() {
+        let firstData = document.getElementById("first").value;
+        let secondData = document.getElementById("second").value;
+        // let sum = parseInt(firstData) + parseInt(secondData);
+        // console.log(sum);
+        // // document.write(sum)
+        // document.getElementById('result').innerText = sum
+
+        console.log(firstData);
+        console.log(firstData.length);
+        console.log(firstData.toUpperCase());
+        console.log(secondData);
+        console.log(secondData.toUpperCase());
+
+
+      }
+    </script>
+  </body>
+</html>
