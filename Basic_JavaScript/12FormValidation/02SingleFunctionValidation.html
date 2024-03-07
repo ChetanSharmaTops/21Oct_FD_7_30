@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Function Validation</title>
+  </head>
+  <body>
+    <h1>Single Function Validation</h1>
+
+    <hr />
+    <input type="text" id="uname" onblur="handleValidation(this, 'error1', 'User Name')" />
+    <span id="error1"></span><br /><br />
+    <input
+      type="password"
+      id="upass"
+      onblur="handleValidation(this, 'error2', 'User Password')"
+    />
+    <span id="error2"></span><br /><br />
+    <input type="email" id="uemail" onblur="handleValidation(this, 'error3', 'User Email')" />
+    <span id="error3"></span><br /><br />
+    <input type="tel" id="umobile" onblur="handleValidation(this, 'error4', 'User Mobile')" />
+    <span id="error4"></span>
+
+    <script>
+      function handleValidation(e, frank, msg) {
+        console.log(e);
+        console.log(e.value);
+        console.log(frank);
+
+        if (e.value == "") {
+          console.log("Empty");
+          document.getElementById(frank).innerText = "Enter valid " + msg;
+          document.getElementById(frank).style.color = "red";
+        } else {
+          console.log("kuchToHai");
+          console.log(e.value);
+          document.getElementById(frank).innerText = "";
+        }
+      }
+    </script>
+  </body>
+</html>
