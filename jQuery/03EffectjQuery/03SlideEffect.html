@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Effect In Jquery</title>
+  </head>
+  <body>
+    <hr />
+    <h1>Slide Effect In Jquery</h1>
+
+    <div id="box">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+      molestias quaerat at, deserunt eum unde id voluptatum, nesciunt excepturi
+      eius quam, iure nemo fugit sit soluta tenetur veniam modi ullam.
+    </div>
+    <hr />
+
+    <button id="btnSlideUp">Slide Up</button>
+    <button id="btnSlideDown">Slide Down</button>
+    <button id="btnSlideToggle">Slide Toggle</button>
+
+    <!-- jquery  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- CSS JQuery  -->
+
+    <script>
+      $("body").css({ backgroundColor: "tan", textAlign: "center" });
+      $("#box").css({
+        backgroundColor: "blue",
+        color: "white",
+        width: "400px",
+        margin: "auto",
+        border: "5px solid lime",
+      });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 30px",
+        margin: "10px",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Slide Up Selector
+
+        $("#btnSlideUp").click(function () {
+            $("#box").slideUp(2000)
+        });
+
+        // Slide Down Selector
+
+        $("#btnSlideDown").click(function () {
+            $("#box").slideDown(3000)
+        });
+
+        // Slide Toggle Selector
+
+        $("#btnSlideToggle").click(function () {
+            $("#box").slideToggle(4000)
+        });
+      });
+    </script>
+  </body>
+</html>

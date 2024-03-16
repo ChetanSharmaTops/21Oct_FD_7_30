@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate Effect In Jquery</title>
+  </head>
+  <body>
+    <hr />
+    <h1>Animate Effect In Jquery</h1>
+
+    <div id="box">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+      molestias quaerat at, deserunt eum unde id voluptatum, nesciunt excepturi
+      eius quam, iure nemo fugit sit soluta tenetur veniam modi ullam.
+    </div>
+    <hr />
+
+    <button id="btnAnimate">Animate</button>
+
+    <!-- jquery  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- CSS JQuery  -->
+
+    <script>
+      $("body").css({ backgroundColor: "tan", textAlign: "center" });
+      $("#box").css({
+        backgroundColor: "blue",
+        color: "white",
+        width: "400px",
+        margin: "auto",
+        border: "5px solid lime",
+      });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 30px",
+        margin: "10px",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Animate
+        $("#btnAnimate").click(function () {
+            $("#box").animate({
+                width: '500px',
+                borderRadius: '20px',
+                padding: '20px',
+                // color: 'red'
+
+            },2000)
+        });
+
+     
+      });
+    </script>
+  </body>
+</html>
