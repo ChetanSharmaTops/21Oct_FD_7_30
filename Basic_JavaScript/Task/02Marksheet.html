@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkSheet</title>
+</head>
+<body>
+    <input type="text"  id="first">
+    <input type="text"  id="second">
+    <button onclick="handleEvent()">Submit</button>
+    <div id="one"></div>
+    <div id="two"></div>
+
+
+    <script>
+        function handleEvent() {
+            let a = document.getElementById('first')
+            let b = document.getElementById('second')
+
+            console.log(a);
+            console.log(b);
+
+            let sum = parseFloat(a.value) + parseFloat(b.value)
+            let sub = (sum/200) * 100
+
+            console.log(sum);
+            console.log(sub);
+            
+            document.getElementById('one').innerText = sum
+            document.getElementById('two').innerText = sub
+
+        }
+    </script>
+</body>
+</html>
